@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 4% 5%;
+  color: purple;
+}
+.collasible-nav-dropdown{
+  color: purple ;
+
+}
