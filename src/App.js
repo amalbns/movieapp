@@ -9,6 +9,9 @@ import NavBar from './Components/NavBar/NavBar';
 import Cass from './Components/NavBar/Cass';
 
 
+
+
+
 function App() {
   const [movies, setMovies] = useState(moviesData )
   const [inputSearch, setInputSearch] = useState("")
@@ -17,17 +20,23 @@ function App() {
     setMovies([...movies,newMovie])
   }
   return (
+    
     <div className="App">
+      
       <NavBar/>
       
       
       <FilterByName inputSearch={inputSearch} setInputSearch={setInputSearch}/>
       <Cass/>
       <FilterByRate isMovieRating={false} rating={rating} setRating={setRating}/>
+      
       <MovieList movies ={movies}  inputSearch={inputSearch} rating={rating}/>
+      
+      
       <AddMovie add={add}/>
       
     </div>
+    
   );
 }
 

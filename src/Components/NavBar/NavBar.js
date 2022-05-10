@@ -3,7 +3,8 @@ import { Nav,NavDropdown, Navbar, Container ,  } from 'react-bootstrap';
 
 const NavBar = () => {
 return (
-    <div><Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <div>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
     <Navbar.Brand href="#home"><h2 style={{ color:'purple' }}>Movie App</h2></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
